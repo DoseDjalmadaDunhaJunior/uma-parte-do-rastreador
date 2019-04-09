@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URI;
+import java.awt.Desktop;
 
 public class Pessoa {
 /** a função abaixo serve para salvar a url de posição da pessoa */
@@ -30,6 +32,10 @@ public class Pessoa {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
+
+    public void abrir(){
+
     }
 
     public String nome;

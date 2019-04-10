@@ -1,5 +1,9 @@
 package com.company;
 
+/**
+ * tudo no main por enquanto é para testes, ver se funcoes estao funcionando entre outras coisas
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

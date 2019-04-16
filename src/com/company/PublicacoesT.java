@@ -8,6 +8,7 @@ public class PublicacoesT {
      * a função abaixo seta o nome
      */
     public void setNome(){
+        System.out.println("insira seu nome");
         Scanner bot = new Scanner(System.in);
         nome = bot.nextLine();
     }
@@ -16,6 +17,7 @@ public class PublicacoesT {
      * a função abaixo seta o comentario
      */
     public void setComentario(){
+        System.out.println("insira seu comentario");
         Scanner bot = new Scanner(System.in);
         comentario = bot.nextLine();
     }

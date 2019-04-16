@@ -4,13 +4,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URI;
+import java.net.*;
 import java.awt.Desktop;
 
 public class Pessoa {
-/** a função abaixo serve para salvar a url de posição da pessoa */
+    /**
+     * a função abaixo serve para salvar a url de posição da pessoa
+     */
     public void url(String html) {
         try {
             URL local = new URL(html);
@@ -34,9 +34,30 @@ public class Pessoa {
         }
     }
 
-    public void abrir(){
+    public void abrir() {
 
     }
+
+    /**
+     * a funcao abaixo salva com perfeição uma url dada, porem por algum motivo não pode ser muito
+     * grande, por isso temos que bolar um esquema que salva o compartilhar do google
+     */
+    public void url() {
+        try {
+            Desktop d = Desktop.getDesktop();
+            try {
+                d.browse(new URI("https://goo.gl/maps/ToTSgc8fakL2"));
+            } catch (IOException | URISyntaxException e) {
+                System.out.println(e);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
 
     public String nome;
     public String mensagem;

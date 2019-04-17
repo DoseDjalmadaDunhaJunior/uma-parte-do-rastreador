@@ -40,13 +40,13 @@ public class Pessoa {
 
     /**
      * a funcao abaixo salva com perfeição uma url dada, porem por algum motivo não pode ser muito
-     * grande, por isso temos que bolar um esquema que salva o compartilhar do google
+     * grande, por isso temos que bolar um esquema que salva a longitude e latutude
      */
     public void url() {
         try {
             Desktop d = Desktop.getDesktop();
             try {
-                d.browse(new URI("https://goo.gl/maps/ToTSgc8fakL2"));
+                d.browse(new URI("https://www.google.com.br/maps/place/"+"-23.723956,-46.579419"));
             } catch (IOException | URISyntaxException e) {
                 System.out.println(e);
             }
